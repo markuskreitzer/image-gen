@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv
+
+# Local environment and secrets
+.env
+.env.*
+
+# Generated outputs and large local model files
+*.png
+*.jpg
+*.jpeg
+*.webp
+outputs/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
