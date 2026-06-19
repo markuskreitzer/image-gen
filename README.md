@@ -44,6 +44,12 @@ uv run imagen generate "a simple red cube on a clean white background" \
   --seed 42
 ```
 
+For quick use, the prompt can also be passed directly:
+
+```bash
+uv run imagen "a simple red cube on a clean white background" --steps 4
+```
+
 The old direct-script workflow also works:
 
 ```bash
@@ -98,7 +104,13 @@ On success, stdout contains:
   "model": "black-forest-labs/FLUX.2-klein-4B",
   "device": "cuda",
   "placement": "cuda with sequential CPU offload",
-  "dtype": "bfloat16"
+  "dtype": "bfloat16",
+  "stats": {
+    "model_load_seconds": 0.9,
+    "generation_seconds": 54.2,
+    "seconds_per_step": 13.55,
+    "total_seconds": 55.1
+  }
 }
 ```
 
